@@ -19,82 +19,97 @@
 </head>
 
 <body>
-	<!-- Nagłowek, nav, logo -->
-	<header class="header-line">
-		<div class="header container">
-			<nav class="navigation">
-				<a class="logo" href="index.html" title="Strona główna"><span class="blue-logo">Web</span>Studio</a>
-				<ul class="nav-list">
-					<li class="nav-item">
-						<a class="nav-link" href="index.html">Agencja</a>
+		<!-- Header, nav, logo -->
+	<!-- HEADER BLOCK -->
+	<header class="header">
+		<div class="header__container container">
+			<nav class="nav">
+
+				<!-- LOGO BLOCK -->
+				<a class="logo" href="index.html" title="Strona główna"><span class="logo--blue">Web</span>Studio</a>
+				<!-- END LOGO BLOCK -->
+
+				<ul class="nav__list">
+					<li class="nav__item">
+						<a class="nav__link nav__link--active" href="#">Agencja</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link is-active" href="portfolio.html">Portfolio</a>
+					<li class="nav__item">
+						<a class="nav__link" href="portfolio.html">Portfolio</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Kontakt</a>
+					<li class="nav__item">
+						<a class="nav__link" href="#">Kontakt</a>
 					</li>
 				</ul>
 			</nav>
-			<ul class="contact-list">
-				<li class="contact-item">
-					<a class="contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+			<ul class="contact__list">
+				<li class="contact__item">
+					<a class="contact__link" href="mailto:info@devstudio.com">
+						<svg class="contact__icon" width="16" height="12">
+							<use href="./images/icons.svg#icon-envelope"></use>
+						</svg>info@devstudio.com</a>
 				</li>
-				<li class="contact-item">
-					<a class="contact-link" href="tel:+48111111111">+48 111 111 111</a>
+				<li class="contact__item">
+					<a class="contact__link" href="tel:+48111111111">
+						<svg class="contact__icon" width="10" height="16">
+							<use href="./images/icons.svg#icon-smartphone"></use>
+						</svg>+48 111 111 111</a>
 				</li>
 			</ul>
 		</div>
 	</header>
-	<!-- Main -->
+
 	<main>
-		<!-- Portfolio menu -->
-		<section class="portfolio-menu container">
-			<ul class="portfolio-menu-list">
-				<li class="portfolio-menu-item">
-					<button type="button" class="btn-submenu">Wszystkie</button>
+		
+		<!-- SUBMENU BLOCK -->
+
+		<section class="submenu container">
+			<ul class="submenu__list">
+				<li class="submenu__item">
+					<button type="button" class="button button--secondary">Wszystkie</button>
 				</li>
-				<li class="portfolio-menu-item">
-					<button type="button" class="btn-submenu">Strony</button>
+				<li class="submenu__item">
+					<button type="button" class="button button--secondary">Strony</button>
 				</li>
-				<li class="portfolio-menu-item">
-					<button type="button" class="btn-submenu">Aplikacje</button>
+				<li class="submenu__item">
+					<button type="button" class="button button--secondary">Aplikacje</button>
 				</li>
-				<li class="portfolio-menu-item">
-					<button type="button" class="btn-submenu">Dizajn</button>
+				<li class="submenu__item">
+					<button type="button" class="button button--secondary">Dizajn</button>
 				</li>
-				<li class="portfolio-menu-item">
-					<button type="button" class="btn-submenu">Marketing</button>
+				<li class="submenu__item">
+					<button type="button" class="button button--secondary">Marketing</button>
 				</li>
 			</ul>
 		</section>
-		<!-- Our SKills  -->
+		<!-- END SUBMENU BLOCK -->
+
+		<!-- SKILLS BLOCK  -->
 		<section class="skills container">
-			<ul class="skills-list">
-				<li class="skills-item">
-					<figure class="skills-photo">
-						<div class="skills-box">
+			<ul class="skills__list">
+				<li class="skills__item">
+					<figure>
+						<div class="skills__box">
 							<img src="./images/ourSkills/skill1.jpg" alt="technocrack" width="370" height="294" />
-							<div class="skills-photo-overlay">
-								<p>
+							<div class="skills___overlay">
+								<p class="skills__explanation">
 									Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
 									koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na
 									niezabezpieczone serwery konkurencji.
 								</p>
 							</div>
 						</div>
-						<figcaption class="skills-description">
-							<h3 class="skills-name">Technocrack</h3>
-							<p class="skills-description-text">Strona internetowa</p>
+						<figcaption class="skills__description">
+							<h3 class="skills__name">Technocrack</h3>
+							<p class="skills__description-text">Strona internetowa</p>
 						</figcaption>
 					</figure>
 				</li>
-				<li class="skills-item">
-					<figure class="skills-photo">
-						<div class="skills-box">
+				<li class="skills__item">
+					<figure>
+						<div class="skills__box">
 							<img src="./images/ourSkills/skill2.jpg" alt="grafikaNewOrlean" width="370" height="294" />
-							<div class="skills-photo-overlay">
-								<p>
+							<div class="skills__overlay">
+								<p class="skills__explanation">
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias laboriosam odio
 									vero
 									cum, inventore expedita ratione consequuntur facere deleniti ex? Exercitationem id
@@ -102,18 +117,18 @@
 								</p>
 							</div>
 						</div>
-						<figcaption class="skills-description">
-							<h3 class="skills-name">Grafika New Orlean vs Golden Star</h3>
-							<p class="skills-description-text">Dizajn</p>
+						<figcaption class="skills__description">
+							<h3 class="skills__name">Grafika New Orlean vs Golden Star</h3>
+							<p class="skills__description-text">Dizajn</p>
 						</figcaption>
 					</figure>
 				</li>
-				<li class="skills-item">
-					<figure class="skills-photo">
-						<div class="skills-box">
+				<li class="skills__item">
+					<figure>
+						<div class="skills__box">
 							<img src="./images/ourSkills/skill3.jpg" alt="restauracja" width="370" height="294" />
-							<div class="skills-photo-overlay">
-								<p>
+							<div class="skills__overlay">
+								<p class="skills__explanation">
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias laboriosam odio
 									vero
 									cum, inventore expedita ratione consequuntur facere deleniti ex? Exercitationem id
@@ -121,18 +136,18 @@
 								</p>
 							</div>
 						</div>
-						<figcaption class="skills-description">
-							<h3 class="skills-name">Restauracja Seafood</h3>
-							<p class="skills-description-text">Aplikacja</p>
+						<figcaption class="skills__description">
+							<h3 class="skills__name">Restauracja Seafood</h3>
+							<p class="skills__description-text">Aplikacja</p>
 						</figcaption>
 					</figure>
 				</li>
-				<li class="skills-item">
-					<figure class="skills-photo">
-						<div class="skills-box">
+				<li class="skills__item">
+					<figure>
+						<div class="skills__box">
 							<img src="./images/ourSkills/skill4.jpg" alt="sluchawki" width="370" height="294" />
-							<div class="skills-photo-overlay">
-								<p>
+							<div class="skills__overlay">
+								<p class="skills__explanation">
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias laboriosam odio
 									vero
 									cum, inventore expedita ratione consequuntur facere deleniti ex? Exercitationem id
@@ -140,18 +155,18 @@
 								</p>
 							</div>
 						</div>
-						<figcaption class="skills-description">
-							<h3 class="skills-name">Projekt Prime</h3>
-							<p class="skills-description-text">Marketing</p>
+						<figcaption class="skills__description">
+							<h3 class="skills__name">Projekt Prime</h3>
+							<p class="skills__description-text">Marketing</p>
 						</figcaption>
 					</figure>
 				</li>
-				<li class="skills-item">
-					<figure class="skills-photo">
-						<div class="skills-box">
+				<li class="skills__item">
+					<figure>
+						<div class="skills__box">
 							<img src="./images/ourSkills/skill5.jpg" alt="boxes" width="370" height="294" />
-							<div class="skills-photo-overlay">
-								<p>
+							<div class="skills__overlay">
+								<p class="skills__explanation">
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias laboriosam odio
 									vero
 									cum, inventore expedita ratione consequuntur facere deleniti ex? Exercitationem id
@@ -159,18 +174,18 @@
 								</p>
 							</div>
 						</div>
-						<figcaption class="skills-description">
-							<h3 class="skills-name">Projekt Boxes</h3>
-							<p class="skills-description-text">Aplikacja</p>
+						<figcaption class="skills__description">
+							<h3 class="skills__name">Projekt Boxes</h3>
+							<p class="skills__description-text">Aplikacja</p>
 						</figcaption>
 					</figure>
 				</li>
-				<li class="skills-item">
-					<figure class="skills-photo">
-						<div class="skills-box">
+				<li class="skills__item">
+					<figure>
+						<div class="skills__box">
 							<img src="./images/ourSkills/skill6.jpg" alt="monitor" width="370" height="294" />
-							<div class="skills-photo-overlay">
-								<p>
+							<div class="skills__overlay">
+								<p class="skills__explanation">
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias laboriosam odio
 									vero
 									cum, inventore expedita ratione consequuntur facere deleniti ex? Exercitationem id
@@ -178,18 +193,18 @@
 								</p>
 							</div>
 						</div>
-						<figcaption class="skills-description">
-							<h3 class="skills-name">Inspiration has no Border</h3>
-							<p class="skills-description-text">Strona inernetowa</p>
+						<figcaption class="skills__description">
+							<h3 class="skills__name">Inspiration has no Border</h3>
+							<p class="skills__description-text">Strona inernetowa</p>
 						</figcaption>
 					</figure>
 				</li>
-				<li class="skills-item">
-					<figure class="skills-photo">
-						<div class="skills-box">
+				<li class="skills__item">
+					<figure>
+						<div class="skills__box">
 							<img src="./images/ourSkills/skill7.jpg" alt="book" width="370" height="294" />
-							<div class="skills-photo-overlay">
-								<p>
+							<div class="skills__overlay">
+								<p class="skills__explanation">
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias laboriosam odio
 									vero
 									cum, inventore expedita ratione consequuntur facere deleniti ex? Exercitationem id
@@ -197,18 +212,18 @@
 								</p>
 							</div>
 						</div>
-						<figcaption class="skills-description">
-							<h3 class="skills-name">Magazyn Limited Edition</h3>
-							<p class="skills-description-text">Dizajn</p>
+						<figcaption class="skills__description">
+							<h3 class="skills__name">Magazyn Limited Edition</h3>
+							<p class="skills__description-text">Dizajn</p>
 						</figcaption>
 					</figure>
 				</li>
-				<li class="skills-item">
-					<figure class="skills-photo">
-						<div class="skills-box">
+				<li class="skills__item">
+					<figure>
+						<div class="skills__box">
 							<img src="./images/ourSkills/skill8.jpg" alt="projektlab" width="370" height="294" />
-							<div class="skills-photo-overlay">
-								<p>
+							<div class="skills__overlay">
+								<p class="skills__explanation">
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias laboriosam odio
 									vero
 									cum, inventore expedita ratione consequuntur facere deleniti ex? Exercitationem id
@@ -216,18 +231,18 @@
 								</p>
 							</div>
 						</div>
-						<figcaption class="skills-description">
-							<h3 class="skills-name">Projekt LAB</h3>
-							<p class="skills-description-text">Marketing</p>
+						<figcaption class="skills__description">
+							<h3 class="skills__name">Projekt LAB</h3>
+							<p class="skills__description-text">Marketing</p>
 						</figcaption>
 					</figure>
 				</li>
-				<li class="skills-item">
-					<figure class="skills-photo">
-						<div class="skills-box">
+				<li class="skills__item">
+					<figure>
+						<div class="skills__box">
 							<img src="./images/ourSkills/skill9.jpg" alt="mac" width="370" height="294" />
-							<div class="skills-photo-overlay">
-								<p>
+							<div class="skills__overlay">
+								<p class="skills__explanation">
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias laboriosam odio
 									vero
 									cum, inventore expedita ratione consequuntur facere deleniti ex? Exercitationem id
@@ -235,62 +250,90 @@
 								</p>
 							</div>
 						</div>
-						<figcaption class="skills-description">
-							<h3 class="skills-name">Growing Business</h3>
-							<p class="skills-description-text">Aplikacja</p>
+						<figcaption class="skills__description">
+							<h3 class="skills__name">Growing Business</h3>
+							<p class="skills__description-text">Aplikacja</p>
 						</figcaption>
 					</figure>
 				</li>
 			</ul>
 		</section>
+
+		<!-- END SKILLS BLOCK -->
+		
 	</main>
-	<!-- Footer -->
-	<footer class="footer">
-		<div class="footer-box container">
-			<div class="footer-content">
-				<a class="logo" href="index.html" title="Strona główna"><span class="blue-logo">Web</span>Studio</a>
-				<address>
-					<ul class="address-list">
-						<li class="address-item">m. Warszawa, Aleje Jerozolimskie 21</li>
-						<li class="address-item">
-							<a class="address-link" href="mailto:info@example.com">info@example.com</a>
+
+		<!-- FOOTER BLOCK -->
+
+		<!-- Footer adress -->
+		<footer class="footer">
+			<div class="footer__container container">
+				<div class="footer__adress">
+					<!-- LOGO BLOCK -->
+					<a class="logo" href="index.html" title="Strona główna"><span class="logo--blue">Web</span>Studio</a>
+					<!-- END LOGO BLOCK -->
+					<address>
+						<ul class="footer__address-list">
+							<li class="footer__address-item">m. Warszawa, Aleje Jerozolimskie 21</li>
+							<li class="footer__address-item">
+								<a class="footer__address-link" href="mailto:info@example.com">info@example.com</a>
+							</li>
+							<li class="footer__address-item">
+								<a class="footer__address-link" href="tel:+48111111111">+48 111 111 111</a>
+							</li>
+						</ul>
+					</address>
+				</div>
+
+				<!-- Footer social -->
+				<div class="footer-socials">
+					<p>Dołącz do nas</p>
+					<ul class="footer__social-list">
+						<li class="footer__social-item">
+							<a href="#" class="footer__social-link" target="_blank"><svg class="footer__social-icon"
+									width="20" height="20">
+									<use href="./images/icons.svg#icon-social-instagram"></use>
+								</svg></a>
 						</li>
-						<li class="address-item">
-							<a class="address-link" href="tel:+48111111111">+48 111 111 111</a>
+						<li class="footer-social__item">
+							<a href="#" class="footer__social-link" target="_blank"><svg class="footer__social-icon"
+									width="20" height="20">
+									<use href="./images/icons.svg#icon-social-twitter"></use>
+								</svg></a>
+						</li>
+						<li class="footer__social-item">
+							<a href="#" class="footer__social-link" target="_blank"><svg class="footer__social-icon"
+									width="20" height="20">
+									<use href="./images/icons.svg#icon-social-fb"></use>
+								</svg></a>
+						</li>
+						<li class="footer__social-item">
+							<a href="#" class="footer__social-link" target="_blank"><svg class="footer__social-icon"
+									width="20" height="20">
+									<use href="./images/icons.svg#icon-social-linkedin"></use>
+								</svg></a>
 						</li>
 					</ul>
-				</address>
+				</div>
+
+				<!-- Post -->
+				<div class="post">
+					<p>Zapisz się do newslettera</p>
+					<form name="post" class="post__form">
+						<label>
+							<input class="post__form-input" type="email" name="newsletter-email" placeholder="E-mail" />
+						</label>
+						<button class="button button--second" type="submit"><span>Zapisz się</span><svg
+								class="button__icon" width="24" height="24">
+								<use href="images/icons.svg#icon-iconSend"></use>
+							</svg></button>
+					</form>
+				</div>
 			</div>
-			<div class="footer-social">
-				<p>Dołącz do nas</p>
-				<ul class="footer-social-list">
-					<li class="footer-social-item">
-						<a href="#" class="footer-social-link" target="_blank"><svg class="footer-social-icon"
-								width="20" height="20">
-								<use href="./images/icons.svg#icon-social-instagram"></use>
-							</svg></a>
-					</li>
-					<li class="footer-social-item">
-						<a href="#" class="footer-social-link" target="_blank"><svg class="footer-social-icon"
-								width="20" height="20">
-								<use href="./images/icons.svg#icon-social-twitter"></use>
-							</svg></a>
-					</li>
-					<li class="footer-social-item">
-						<a href="#" class="footer-social-link" target="_blank"><svg class="footer-social-icon"
-								width="20" height="20">
-								<use href="./images/icons.svg#icon-social-fb"></use>
-							</svg></a>
-					</li>
-					<li class="footer-social-item">
-						<a href="#" class="footer-social-link" target="_blank"><svg class="footer-social-icon"
-								width="20" height="20">
-								<use href="./images/icons.svg#icon-social-linkedin"></use>
-							</svg></a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</footer>
-</body>
+		</footer>
+
+		<!-- END FOOTER BLOCK -->
+
+		<script src="./js/modal.js"></script>
+		</body>
 </html>
