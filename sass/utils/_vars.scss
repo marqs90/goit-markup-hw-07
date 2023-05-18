@@ -8,4 +8,7 @@ $firstBcgColor: #fff;
 $secondBcgColor: #2f303a;
 
 $firstFrameColor: #afb1b8;
-$defaultBorderRadious: 4px;
+$defaultBorderRadius: 4px;
+
+$transitionDurationDefault: 250ms;
+$transitionTimingDefault: cubic-bezier(0.4, 0, 0.2, 1);
