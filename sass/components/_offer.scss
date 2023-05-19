@@ -1,12 +1,15 @@
 .offer {
 	background-color: $firstBcgColor;
-	&__list {
-        display: flex;
-        justify-content: space-between;
-		list-style: none;
-    }
+	// &__list {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     flex-wrap: wrap;
+	// 	list-style: none;
+    // }
     &__item {
         position: relative;
+        display: inline-block;
+        margin-right: 25px;
     }
     &__item > img{
         display: block;
