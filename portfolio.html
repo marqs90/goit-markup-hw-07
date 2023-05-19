@@ -26,15 +26,15 @@
 			<nav class="nav">
 
 				<!-- LOGO BLOCK -->
-				<a class="logo" href="index.html" title="Strona główna"><span class="logo--blue">Web</span>Studio</a>
+				<a class="logo" href="index.html" title="Strona główna">Web<span class="logo--upper">Studio</span></a>
 				<!-- END LOGO BLOCK -->
 
 				<ul class="nav__list">
 					<li class="nav__item">
-						<a class="nav__link nav__link--active" href="#">Agencja</a>
+						<a class="nav__link" href="index.html">Agencja</a>
 					</li>
 					<li class="nav__item">
-						<a class="nav__link" href="portfolio.html">Portfolio</a>
+						<a class="nav__link nav__link--active" href="portfolio.html">Portfolio</a>
 					</li>
 					<li class="nav__item">
 						<a class="nav__link" href="#">Kontakt</a>
@@ -58,11 +58,11 @@
 		</div>
 	</header>
 
-	<main>
+	<main class="container">
 		
 		<!-- SUBMENU BLOCK -->
 
-		<section class="submenu container">
+		<section class="submenu section">
 			<ul class="submenu__list">
 				<li class="submenu__item">
 					<button type="button" class="button button--secondary">Wszystkie</button>
@@ -84,7 +84,7 @@
 		<!-- END SUBMENU BLOCK -->
 
 		<!-- SKILLS BLOCK  -->
-		<section class="skills container">
+		<section class="skills section">
 			<ul class="skills__list">
 				<li class="skills__item">
 					<figure>
@@ -265,12 +265,15 @@
 
 		<!-- FOOTER BLOCK -->
 
+		<!-- FOOTER BLOCK -->
+
 		<!-- Footer adress -->
 		<footer class="footer">
-			<div class="footer__container container">
+			<div class="footer__box container">
 				<div class="footer__adress">
 					<!-- LOGO BLOCK -->
-					<a class="logo" href="index.html" title="Strona główna"><span class="logo--blue">Web</span>Studio</a>
+					<a class="logo" href="index.html" title="Strona główna"><span
+							class="logo--lower">Web</span>Studio</a>
 					<!-- END LOGO BLOCK -->
 					<address>
 						<ul class="footer__address-list">
@@ -288,27 +291,27 @@
 				<!-- Footer social -->
 				<div class="footer-socials">
 					<p>Dołącz do nas</p>
-					<ul class="footer__social-list">
-						<li class="footer__social-item">
-							<a href="#" class="footer__social-link" target="_blank"><svg class="footer__social-icon"
+					<ul class="footer-socials__list">
+						<li class="footer-socials__item">
+							<a href="#" class="footer-socials__link" target="_blank"><svg class="footer-socials__icon"
 									width="20" height="20">
 									<use href="./images/icons.svg#icon-social-instagram"></use>
 								</svg></a>
 						</li>
-						<li class="footer-social__item">
-							<a href="#" class="footer__social-link" target="_blank"><svg class="footer__social-icon"
+						<li class="footer-socials__item">
+							<a href="#" class="footer-socials__link" target="_blank"><svg class="footer-socials__icon"
 									width="20" height="20">
 									<use href="./images/icons.svg#icon-social-twitter"></use>
 								</svg></a>
 						</li>
-						<li class="footer__social-item">
-							<a href="#" class="footer__social-link" target="_blank"><svg class="footer__social-icon"
+						<li class="footer-socials__item">
+							<a href="#" class="footer-socials__link" target="_blank"><svg class="footer-socials__icon"
 									width="20" height="20">
 									<use href="./images/icons.svg#icon-social-fb"></use>
 								</svg></a>
 						</li>
-						<li class="footer__social-item">
-							<a href="#" class="footer__social-link" target="_blank"><svg class="footer__social-icon"
+						<li class="footer-socials__item">
+							<a href="#" class="footer-socials__link" target="_blank"><svg class="footer-socials__icon"
 									width="20" height="20">
 									<use href="./images/icons.svg#icon-social-linkedin"></use>
 								</svg></a>
@@ -323,8 +326,8 @@
 						<label>
 							<input class="post__form-input" type="email" name="newsletter-email" placeholder="E-mail" />
 						</label>
-						<button class="button button--second" type="submit"><span>Zapisz się</span><svg
-								class="button__icon" width="24" height="24">
+						<button class="button button--post" type="submit"><span>Zapisz się</span><svg class="post__icon"
+								width="24" height="24">
 								<use href="images/icons.svg#icon-iconSend"></use>
 							</svg></button>
 					</form>
